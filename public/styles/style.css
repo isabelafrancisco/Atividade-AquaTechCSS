@@ -12,7 +12,7 @@ body{
 
 :root{
     --tamanho-header: 80px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-banner: calc(50vh - var(--tamanho-header) - var(--tamanho-footer) - 2px); /* muda o tamanho do banner*/
     --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
     --tamanho-footer: 65px;
 }
@@ -171,12 +171,12 @@ body{
     font-weight: 800;
     flex-direction: column;
 }
-
+/* 
 span {
     text-align: left;
     margin-left: 52px;
     margin-top: 10px;
-}
+} */
 
 input {
     border-radius: 10px;
@@ -219,6 +219,99 @@ input {
     text-align: center;
     margin-bottom: 20px;
   }
+
+
+  /* PAGINA INDEX */
+
+.banner {
+    height: 200px;
+    color: white;
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-size: cover;
+}
+
+.banner .container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.banner .container p {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+}
+
+span {
+    font-weight: 700;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.titulo {
+    color: #32b9cd;
+    width: fit-content;
+    font-weight: 400;
+
+}
+
+.header{
+    height: var(--tamanho-header);
+    border-bottom: 2px solid #32b9cd;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.header .container{
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* SOCIAL */
+
+.social {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social .container { /* deixar no meio */
+    display: flex;
+    justify-content: center;
+}
+.social .container .boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.box img {
+    width: 170px;
+}
+
 
 
 
